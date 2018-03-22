@@ -1,0 +1,31 @@
+
+//--------------- Initiate ---------------//
+html
+  font-size: 16px
+body
+
+a:focus, a:active, button:focus, button:active
+  outline: none !important
+  box-shadow: none
+
+
+
+// Main Slider
+#mainSlider
+  .carousel-item
+    height: 100vh
+    min-height: 300px
+    background: no-repeat center center scroll
+    -webkit-background-size: cover
+    -moz-background-size: cover
+    -o-background-size: cover
+    background-size: cover
+  .carousel-control-prev-icon
+    background-image: url('/images/arrow-left.svg')
+  .carousel-control-next-icon
+    background-image: url('/images/arrow-right.svg')
+  .carousel-control-prev-icon, .carousel-control-next-icon
+    width: 30px
+    height: 30px
+  .carousel-indicators li
+    cursor: pointer

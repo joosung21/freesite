@@ -1,0 +1,43 @@
+include ./includes/header.pug
+
+body(name='outdoor')
+
+  //- Top Navigation
+  include ./includes/topnav.pug
+
+  //- Full-page Main Slider
+  header
+    #mainSlider.carousel.slide(data-ride='carousel')
+      ol.carousel-indicators
+        li.active(data-target='#mainSlider', data-slide-to='0')
+        li(data-target='#mainSlider', data-slide-to='1')
+        li(data-target='#mainSlider', data-slide-to='2')
+        li(data-target='#mainSlider', data-slide-to='3')
+        li(data-target='#mainSlider', data-slide-to='4')
+        li(data-target='#mainSlider', data-slide-to='5')
+        li(data-target='#mainSlider', data-slide-to='6')
+        li(data-target='#mainSlider', data-slide-to='7')
+        li(data-target='#mainSlider', data-slide-to='8')
+        li(data-target='#mainSlider', data-slide-to='9')
+        li(data-target='#mainSlider', data-slide-to='10')
+        li(data-target='#mainSlider', data-slide-to='11')
+      .carousel-inner(role='listbox')
+        .carousel-item.active(style="background-image: url('/images/sample/outdoor-01.jpg')")
+        .carousel-item(style="background-image: url('/images/sample/outdoor-02.jpg')")
+        .carousel-item(style="background-image: url('/images/sample/outdoor-03.jpg')")
+        .carousel-item(style="background-image: url('/images/sample/outdoor-04.jpg')")
+        .carousel-item(style="background-image: url('/images/sample/outdoor-05.jpg')")
+        .carousel-item(style="background-image: url('/images/sample/outdoor-06.jpg')")
+        .carousel-item(style="background-image: url('/images/sample/outdoor-07.jpg')")
+        .carousel-item(style="background-image: url('/images/sample/outdoor-08.jpg')")
+        .carousel-item(style="background-image: url('/images/sample/outdoor-09.jpg')")
+        .carousel-item(style="background-image: url('/images/sample/outdoor-10.jpg')")
+        .carousel-item(style="background-image: url('/images/sample/outdoor-11.jpg')")
+        .carousel-item(style="background-image: url('/images/sample/outdoor-12.jpg')")
+
+      a.carousel-control-prev(href='#mainSlider', role='button', data-slide='prev')
+        span.carousel-control-prev-icon(aria-hidden='true')
+        span.sr-only Previous
+      a.carousel-control-next(href='#mainSlider', role='button', data-slide='next')
+        span.carousel-control-next-icon(aria-hidden='true')
+        span.sr-only Next
