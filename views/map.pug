@@ -1,0 +1,55 @@
+include ./includes/header.pug
+
+body(name='map')
+
+  //- Top Navigation
+  include ./includes/topnav.pug
+  .margin-for-nav
+  #viewmap.mb-5
+    script.
+      function initMap() {
+        var myLatLng = {lat: 35.975003, lng: 129.551674};
+        var map = new google.maps.Map(document.getElementById('viewmap'), {
+          zoom: 10,
+          center: myLatLng
+        });
+        var image = '/images/pin.svg';
+        var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          icon: image
+        });
+      }
+    script(async defer src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAYAR9ha33tDQfl81KCVoePD_w3KcAaWGo&callback=initMap')
+  .container(style='min-height: 40vh')
+    .row
+      .col-sm
+        h3 메르송풀앤스파
+        p
+          | 경북 포항시 남구 구룡포읍 하정로138번길 36
+          br
+          | 연락처: 010-2101-2000
+
+        .py-2
+
+        h3 픽업안내
+        p
+          | 픽업 불가능
+      .col-sm
+        h3 주변 핫스팟
+        p
+          | - 알파카월드 (070-7786-0574) / 화촌면 풍천리 310 / 차로 30km
+          br
+          | - 토탈쌤체험박물관 (033-435-4600) / 화촌면 구성포리 63-1 / 차로 17km
+          br
+          | - 길매식당 (033-432-2314) / 화촌면 외삼포리 528-18 / 차로 15km
+          br
+          | - 빵굽는동네 (033-433-1105) / 서석면 풍암리 225-6 /  차로 10km
+          br
+          | - 홍천동키허니랜드 (033-432-7878) / 화촌면 외삼포리 1426 / 차로 13km
+          br
+          | - 서석5일장 / 서석면 풍암리 일대 / 차로 10km
+
+
+  //- Footer
+  include ./includes/footer.pug

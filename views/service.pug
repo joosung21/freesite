@@ -1,0 +1,141 @@
+include ./includes/header.pug
+
+body(name='service')
+
+  //- Top Navigation
+  include ./includes/topnav.pug
+
+  .container.margin-for-nav.py-5
+
+    #serviceSlider1.carousel.slide(data-ride='carousel')
+      ol.carousel-indicators
+        li.active(data-target='#serviceSlider1', data-slide-to='0')
+        li(data-target='#serviceSlider1', data-slide-to='1')
+        li(data-target='#serviceSlider1', data-slide-to='2')
+        li(data-target='#serviceSlider1', data-slide-to='3')
+        li(data-target='#serviceSlider1', data-slide-to='4')
+      .carousel-inner(role='listbox')
+        .carousel-item.active(style="background-image: url('/images/sample/pool-01.jpg')")
+        .carousel-item(style="background-image: url('/images/sample/pool-02.jpg')")
+        .carousel-item(style="background-image: url('/images/sample/pool-03.jpg')")
+        .carousel-item(style="background-image: url('/images/sample/pool-04.jpg')")
+        .carousel-item(style="background-image: url('/images/sample/pool-05.jpg')")
+
+      a.carousel-control-prev(href='#serviceSlider1', role='button', data-slide='prev')
+        span.carousel-control-prev-icon(aria-hidden='true')
+        span.sr-only Previous
+      a.carousel-control-next(href='#serviceSlider1', role='button', data-slide='next')
+        span.carousel-control-next-icon(aria-hidden='true')
+        span.sr-only Next
+    .p-5.mb-5
+      h3.my-4 인피니트 수영장
+      P
+        | - 현재 수영장은 운영이 종료되었습니다. (2018년 운영미정)
+        br
+        | - 크기 : 가로 6m * 세로 12m * 수심 1m
+        br
+        | - 운영기간 : 6월 30일 ~ 9월 3일(※ 상황에 따라 변동될 수 있습니다.)
+        br
+        | - 영유아 어린이는 반드시 보호자와 함께 이용해 주세요. (※ 날씨 상황에 따라 수영장 및 파이어핏 등 야외 시설의 이용이 제한될 수 있습니다.)
+
+    #serviceSlider2.carousel.slide(data-ride='carousel')
+      ol.carousel-indicators
+        li.active(data-target='#serviceSlider2', data-slide-to='0')
+        li(data-target='#serviceSlider2', data-slide-to='1')
+        li(data-target='#serviceSlider2', data-slide-to='2')
+      .carousel-inner(role='listbox')
+        .carousel-item.active(style="background-image: url('/images/sample/spa-01.jpg')")
+        .carousel-item(style="background-image: url('/images/sample/spa-02.jpg')")
+        .carousel-item(style="background-image: url('/images/sample/spa-03.jpg')")
+
+      a.carousel-control-prev(href='#serviceSlider2', role='button', data-slide='prev')
+        span.carousel-control-prev-icon(aria-hidden='true')
+        span.sr-only Previous
+      a.carousel-control-next(href='#serviceSlider2', role='button', data-slide='next')
+        span.carousel-control-next-icon(aria-hidden='true')
+        span.sr-only Next
+
+    .p-5.mb-5
+      h3.my-4 스파/월풀
+      P
+        | - 프랑스산 고급 월풀 스파를 설치해 놓았습니다. 바다를 전망으로 따뜻한 스파를 즐겨 보세요.
+        br
+        | - 이용하실 때에는 미끄러지져 부상당하시지 않도록 주의 부탁드립니다.
+        br
+        | - 물이 넘칠 수 있으니, 물을 받으실 때 주의하시기 바랍니다.
+        br
+        | - 거품입욕제는 사용이 불가능합니다.
+
+    #serviceSlider3.carousel.slide(data-ride='carousel')
+      ol.carousel-indicators
+        li.active(data-target='#serviceSlider3', data-slide-to='0')
+        li(data-target='#serviceSlider3', data-slide-to='1')
+        li(data-target='#serviceSlider3', data-slide-to='2')
+      .carousel-inner(role='listbox')
+        .carousel-item.active(style="background-image: url('/images/sample/barbeque-01.jpg')")
+        .carousel-item(style="background-image: url('/images/sample/barbeque-02.jpg')")
+        .carousel-item(style="background-image: url('/images/sample/barbeque-03.jpg')")
+
+      a.carousel-control-prev(href='#serviceSlider3', role='button', data-slide='prev')
+        span.carousel-control-prev-icon(aria-hidden='true')
+        span.sr-only Previous
+      a.carousel-control-next(href='#serviceSlider3', role='button', data-slide='next')
+        span.carousel-control-next-icon(aria-hidden='true')
+        span.sr-only Next
+
+    .p-5.mb-5
+      h3.my-4 바베큐
+      P
+        | - 개별 테라스에서 독립적인 바비큐가 가능합니다.
+        br
+        | - 바베큐는 22시 이후에는 제한이 될 수 있습니다.
+        br
+        | - 숯&amp;그릴: 30,000원 (현장결제)
+        br
+        | - 숯 추가 시 : 10,000원
+        br
+        | - 가을 저녁 어두운 바비큐장을 환하게 밝혀줄 랜턴을 대여해 드리고 있습니다.
+        br
+        | - 숯+그릴 제공 품목: 숯(차콜), 그릴망, 토치(부탄가스 포함), 불쏘시게, 캔들라이터 / (훈제)바비큐 그릴과 숯 집게는 정원에 기본 비치되어 있습니다.
+        br
+        | ※ 날씨 상황에 따라 수영장 및 파이어핏, 바비큐 등 야외 시설의 이용이 제한될 수 있습니다.
+
+    #serviceSlider4.carousel.slide(data-ride='carousel')
+      ol.carousel-indicators
+        li.active(data-target='#serviceSlider4', data-slide-to='0')
+        li(data-target='#serviceSlider4', data-slide-to='1')
+        li(data-target='#serviceSlider4', data-slide-to='2')
+        li(data-target='#serviceSlider4', data-slide-to='3')
+        li(data-target='#serviceSlider4', data-slide-to='4')
+      .carousel-inner(role='listbox')
+        .carousel-item.active(style="background-image: url('/images/sample/amenity-01.jpg')")
+        .carousel-item(style="background-image: url('/images/sample/amenity-02.jpg')")
+        .carousel-item(style="background-image: url('/images/sample/amenity-03.jpg')")
+        .carousel-item(style="background-image: url('/images/sample/amenity-04.jpg')")
+        .carousel-item(style="background-image: url('/images/sample/amenity-05.jpg')")
+
+      a.carousel-control-prev(href='#serviceSlider4', role='button', data-slide='prev')
+        span.carousel-control-prev-icon(aria-hidden='true')
+        span.sr-only Previous
+      a.carousel-control-next(href='#serviceSlider4', role='button', data-slide='next')
+        span.carousel-control-next-icon(aria-hidden='true')
+        span.sr-only Next
+
+    .p-5.mb-5
+      h3.my-4 어메니티
+      P
+        | - Nespresso 커피머신과 커피캡슐이 구비되어 있습니다.
+        br
+        | - 고급 샴푸, 바디샴푸, 컨디셔너, 바디로션, 수건이 구비되어 있습니다.
+        br
+        | - 주방에는 기본조미료: 소금, 후추, 고추가루, 창기름, 식초, 참깨가 구비되어 있습니다.
+        br
+        | - American Standard의 고급 자재로 욕실이 꾸며져 있습니다.
+
+
+  //- Footer
+  include ./includes/footer.pug
+
+
+
+
