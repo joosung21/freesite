@@ -1,8 +1,18 @@
 
+// Theme Colors
+$dark: #343a40
+$red: #E73E46
+$orange: #F89238
+$yellow: #FFCD56
+$green: #7ED321
+$blue: #36A2EB
+$navy: #25577D
+
 //--------------- Initiate ---------------//
 html
   font-size: 16px
 body
+
 .container.margin-for-nav
   margin-top: 3.5rem
   min-height: calc(100vh - 6rem)
@@ -88,6 +98,56 @@ header
       -o-background-size: cover
       background-size: cover
 
+// Theme Setting
+nav.navbar
+  &.theme-white
+    background-color: white !important
+    box-shadow: 0px 0px 3px 0 rgba(black, .3)
+  &.theme-red
+    background-color: $red !important
+  &.theme-orange
+    background-color: $orange !important
+  &.theme-yellow
+    background-color: $yellow !important
+  &.theme-green
+    background-color: $green !important
+  &.theme-blue
+    background-color: $blue !important
+  &.theme-navy
+    background-color: $navy !important
+  &.theme-white, &.theme-yellow
+    .navbar-brand
+      font-weight: 400
+      color: #4F4F4F !important
+    .nav-link
+      font-weight: 400
+      color: #666
+      &:hover
+        color: #4F4F4F
+    .nav-item.active .nav-link
+      color: #4F4F4F
+
+footer
+  &.theme-white
+    background-color: #F2F3F8 !important
+  &.theme-red
+    background-color: $red !important
+  &.theme-orange
+    background-color: $orange !important
+  &.theme-yellow
+    background-color: $yellow !important
+  &.theme-green
+    background-color: $green !important
+  &.theme-blue
+    background-color: $blue !important
+  &.theme-navy
+    background-color: $navy !important
+  &.theme-red, &.theme-orange, &.theme-green, &.theme-navy
+    .col-sm
+      color: white
+      opacity: .7
+
+
 // Room View
 .view-header
   background-color: white
@@ -113,3 +173,42 @@ footer
       &:hover
         color: #bbb
 
+// DEMO ONLY
+.demo-control
+  position: fixed
+  right: 2rem
+  top: 6rem
+  border-radius: 4px
+  padding: 1rem 1.5rem
+  width: 8rem
+  text-align: center
+  background-color: white
+  ul.color-pick
+    li
+      width: 2rem
+      height: 2rem
+      border-radius: 1rem
+      float: left
+      margin: .25rem
+      cursor: pointer
+      opacity: .85
+      transition: all .3s
+      &:hover
+        opacity: 1
+    .dark
+      background-color: $dark
+    .white
+      background-color: white
+      border: 2px solid #eee
+    .red
+      background-color: $red
+    .orange
+      background-color: $orange
+    .yellow
+      background-color: $yellow
+    .green
+      background-color: $green
+    .blue
+      background-color: $blue
+    .navy
+      background-color: $navy
