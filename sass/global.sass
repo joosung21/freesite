@@ -215,3 +215,30 @@ footer
       opacity: .7
       a
         color: white
+
+
+//---------- Responsive: Smaller than 500px ----------//
+@media only screen and (max-width: 500px)
+  header
+  .alert-group
+    top: 3.5rem !important
+    left: 0 !important
+    z-index: 1000
+    width: 100vw
+    .alert
+      border-radius: 0
+
+  #mainSlider
+    .carousel-item
+      height: 60vh !important
+
+  .demo-control
+    left: 0
+    bottom: 0
+    top: auto
+    border-radius: 0
+    padding: 1rem 1.5rem 0rem 1.5rem
+    width: 100vw
+    ul
+      display: flex
+      justify-content: center
