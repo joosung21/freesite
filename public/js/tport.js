@@ -20,10 +20,10 @@ var changeTheme = function(color){
       $('.navbar').addClass('theme-orange');
       $('footer').addClass('theme-orange');
       break;
-    case 'yellow':
-      $.cookie("theme", "yellow");
-      $('.navbar').addClass('theme-yellow');
-      $('footer').addClass('theme-yellow');
+    case 'pink':
+      $.cookie("theme", "pink");
+      $('.navbar').addClass('theme-pink');
+      $('footer').addClass('theme-pink');
       break;
     case 'green':
       $.cookie("theme", "green");
@@ -46,8 +46,8 @@ var changeTheme = function(color){
 }
 
 var removeAllTheme = function(){
-  $('.navbar').removeClass('theme-white theme-dark theme-red theme-orange theme-yellow theme-green theme-blue theme-navy');
-  $('footer').removeClass('theme-white theme-dark theme-red theme-orange theme-yellow theme-green theme-blue theme-navy');
+  $('.navbar').removeClass('theme-white theme-dark theme-red theme-orange theme-pink theme-green theme-blue theme-navy');
+  $('footer').removeClass('theme-white theme-dark theme-red theme-orange theme-pink theme-green theme-blue theme-navy');
 }
 
 
@@ -92,9 +92,9 @@ $( document ).ready(function() {
       $('.navbar').addClass('theme-orange');
       $('footer').addClass('theme-orange');
       break;
-    case 'yellow':
-      $('.navbar').addClass('theme-yellow');
-      $('footer').addClass('theme-yellow');
+    case 'pink':
+      $('.navbar').addClass('theme-pink');
+      $('footer').addClass('theme-pink');
       break;
     case 'green':
       $('.navbar').addClass('theme-green');
