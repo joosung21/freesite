@@ -8,37 +8,30 @@ var changeTheme = function(color){
     case 'white':
       $.cookie("theme", "white");
       $('.navbar').addClass('theme-white');
-      $('footer').addClass('theme-white');
       break;
     case 'red':
       $.cookie("theme", "red");
       $('.navbar').addClass('theme-red');
-      $('footer').addClass('theme-red');
       break;
     case 'orange':
       $.cookie("theme", "orange");
       $('.navbar').addClass('theme-orange');
-      $('footer').addClass('theme-orange');
       break;
     case 'pink':
       $.cookie("theme", "pink");
       $('.navbar').addClass('theme-pink');
-      $('footer').addClass('theme-pink');
       break;
     case 'green':
       $.cookie("theme", "green");
       $('.navbar').addClass('theme-green');
-      $('footer').addClass('theme-green');
       break;
     case 'blue':
       $.cookie("theme", "blue");
       $('.navbar').addClass('theme-blue');
-      $('footer').addClass('theme-blue');
       break;
     case 'navy':
       $.cookie("theme", "navy");
       $('.navbar').addClass('theme-navy');
-      $('footer').addClass('theme-navy');
       break;
     default:
       break;
@@ -47,7 +40,6 @@ var changeTheme = function(color){
 
 var removeAllTheme = function(){
   $('.navbar').removeClass('theme-white theme-dark theme-red theme-orange theme-pink theme-green theme-blue theme-navy');
-  $('footer').removeClass('theme-white theme-dark theme-red theme-orange theme-pink theme-green theme-blue theme-navy');
 }
 
 
@@ -78,35 +70,27 @@ $( document ).ready(function() {
   switch($.cookie("theme")) {
     case 'white':
       $('.navbar').addClass('theme-white');
-      $('footer').addClass('theme-white');
       break;
     case 'dark':
       $('.navbar').addClass('theme-dark');
-      $('footer').addClass('theme-dark');
       break;
     case 'red':
       $('.navbar').addClass('theme-red');
-      $('footer').addClass('theme-red');
       break;
     case 'orange':
       $('.navbar').addClass('theme-orange');
-      $('footer').addClass('theme-orange');
       break;
     case 'pink':
       $('.navbar').addClass('theme-pink');
-      $('footer').addClass('theme-pink');
       break;
     case 'green':
       $('.navbar').addClass('theme-green');
-      $('footer').addClass('theme-green');
       break;
     case 'blue':
       $('.navbar').addClass('theme-blue');
-      $('footer').addClass('theme-blue');
       break;
     case 'navy':
       $('.navbar').addClass('theme-navy');
-      $('footer').addClass('theme-navy');
       break;
     default:
       break;
