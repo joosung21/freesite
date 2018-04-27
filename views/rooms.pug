@@ -6,48 +6,94 @@ body(name='rooms')
   include ./includes/topnav.pug
 
   .container#rooms.margin-for-nav.py-5
-    .card-deck
-      .card(onclick="location.href='/room-view'")
-        img.card-img-top(src='/images/sample/2A-01.jpg')
-        .card-body
-          h5.card-title 2A. POOL &amp; SPA
-          p.card-text
-            | 33평형 / 수영장 + 스파 + 오션뷰
-            br
-            | 객실설명
-          p.card-text
-            small.text-muted 기준 4명, 쵀대 8명
-      .card(onclick="location.href='/room-view'")
-        img.card-img-top(src='/images/sample/2B-03.jpg')
-        .card-body
-          h5.card-title 2B. POOL &amp; SPA
-          p.card-text
-            | 33평형 / 수영장 + 스파 + 오션뷰
-            br
-            | 객실설명
-          p.card-text
-            small.text-muted 기준 4명, 쵀대 8명
-    .card-deck
-      .card(onclick="location.href='/room-view'")
-        img.card-img-top(src='/images/sample/3A-02.jpg')
-        .card-body
-          h5.card-title 3A. SKY POOL &amp; SPA
-          p.card-text
-            | 33평형 / 수영장 + 스파 + 오션뷰
-            br
-            | 객실설명
-          p.card-text
-            small.text-muted 기준 4명, 쵀대 8명
-      .card(onclick="location.href='/room-view'")
-        img.card-img-top(src='/images/sample/3B-04.jpg')
-        .card-body
-          h5.card-title 3B. SKY POOL &amp; SPA
-          p.card-text
-            | 33평형 / 수영장 + 스파 + 오션뷰
-            br
-            | 객실설명
-          p.card-text
-            small.text-muted 기준 4명, 쵀대 8명
+    //- .card-deck
+    //-   .card(onclick="location.href='/room-view'")
+    //-     .card-img-top(style="background-image: url('/images/sample2/101.jpg')")
+    //-     .card-body
+    //-       h5.card-title 101
+    //-       p.card-text
+    //-         | 33평형 / 오션뷰
+    //-         br
+    //-         | 객실설명
+    //-       p.card-text
+    //-         small.text-muted 기준 4명, 쵀대 8명
+    //-   .card(onclick="location.href='/room-view'")
+    //-     .card-img-top(style="background-image: url('/images/sample2/202.jpg')")
+    //-     .card-body
+    //-       h5.card-title 202
+    //-       p.card-text
+    //-         | 33평형 / 오션뷰
+    //-         br
+    //-         | 객실설명
+    //-       p.card-text
+    //-         small.text-muted 기준 4명, 쵀대 8명
+    //- .card-deck
+    //-   .card(onclick="location.href='/room-view'")
+    //-     .card-img-top(style="background-image: url('/images/sample2/303.jpg')")
+    //-     .card-body
+    //-       h5.card-title 303
+    //-       p.card-text
+    //-         | 33평형 / 오션뷰
+    //-         br
+    //-         | 객실설명
+    //-       p.card-text
+    //-         small.text-muted 기준 4명, 쵀대 8명
+    //-   .card(onclick="location.href='/room-view'")
+    //-     .card-img-top(style="background-image: url('/images/sample2/404.jpg')")
+    //-     .card-body
+    //-       h5.card-title 404
+    //-       p.card-text
+    //-         | 33평형 / 오션뷰
+    //-         br
+    //-         | 객실설명
+    //-       p.card-text
+    //-         small.text-muted 기준 4명, 쵀대 8명
+
+    .row.room-list
+      .col-lg-6.mb-5
+        .card(onclick="location.href='/room-view'")
+          .card-img-top(style="background-image: url('/images/sample/2A-01.jpg')")
+          .card-body
+            h5.card-title 2A. POOL &amp; SPA
+            p.card-text
+              | 33평형 / 수영장 + 스파 + 오션뷰
+              br
+              | 객실설명
+            p.card-text
+              small.text-muted 기준 4명, 쵀대 8명
+      .col-lg-6.mb-5
+        .card(onclick="location.href='/room-view'")
+          .card-img-top(style="background-image: url('/images/sample/2B-03.jpg')")
+          .card-body
+            h5.card-title 2B. POOL &amp; SPA
+            p.card-text
+              | 33평형 / 수영장 + 스파 + 오션뷰
+              br
+              | 객실설명
+            p.card-text
+              small.text-muted 기준 4명, 쵀대 8명
+      .col-lg-6.mb-5
+        .card(onclick="location.href='/room-view'")
+          .card-img-top(style="background-image: url('/images/sample/3A-02.jpg')")
+          .card-body
+            h5.card-title 3A. SKY POOL &amp; SPA
+            p.card-text
+              | 33평형 / 수영장 + 스파 + 오션뷰
+              br
+              | 객실설명
+            p.card-text
+              small.text-muted 기준 4명, 쵀대 8명
+      .col-lg-6.mb-5
+        .card(onclick="location.href='/room-view'")
+          .card-img-top(style="background-image: url('/images/sample/3B-04.jpg')")
+          .card-body
+            h5.card-title 3B. SKY POOL &amp; SPA
+            p.card-text
+              | 33평형 / 수영장 + 스파 + 오션뷰
+              br
+              | 객실설명
+            p.card-text
+              small.text-muted 기준 4명, 쵀대 8명
 
 
   //- Footer
