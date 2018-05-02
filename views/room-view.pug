@@ -6,21 +6,6 @@ body(name='rooms')
   include ./includes/topnav.pug
 
   .view-header.margin-for-nav
-    //- ul#view-top-slider.content-slider
-      li
-        img(src='/images/sample2/room/01.jpg')
-      li
-        img(src='/images/sample2/room/02.jpg')
-      li
-        img(src='/images/sample2/room/03.jpg')
-      li
-        img(src='/images/sample2/room/04.jpg')
-      li
-        img(src='/images/sample2/room/05.jpg')
-      li
-        img(src='/images/sample2/room/06.jpg')
-      li
-        img(src='/images/sample2/room/07.jpg')
     ul#view-top-slider.content-slider
       li
         img(src='/images/sample/2A-01.jpg')
@@ -40,10 +25,7 @@ body(name='rooms')
         img(src='/images/sample/2A-08.jpg')
       li
         img(src='/images/sample/2A-09.jpg')
-    //- .container.py-4
-    //-   h1 101
-    //-   .lead 33평형 / 오션뷰
-    //-   hr
+
     .container.py-4
       h1 2A. POOL &amp; SPA
       .lead 33평형 / 수영장 + 스파 + 오션뷰
@@ -68,13 +50,52 @@ body(name='rooms')
       | - 기준 4명 | 최대 8명
       br
       | - 기준 인원 초과 시 추가요금이 발생합니다.
-      br
-      | - 성인 20,000원, 아동 20,000원, 유아 20,000원
-      br
-      | - 최대 인원 초과 시 입실이 불가하오니 정해진 기준/최대 인원을 준수해 주시기 바랍니다.
 
-    h4 입퇴실 안내
-    p.pb-4 입실 15:00부터 22:00까지, 퇴실 11:00
+    table.table.border.text-center.mb-5
+      thead.bg-light
+        tr
+          th(colspan='5') 객실 기본요금
+          th.border-left(colspan='3') 추가인원 요금
+        tr
+          th(style='') 시즌
+          th 일요일
+          th 주중
+          th 금요일
+          th 토요일(공휴일전날)
+          th.border-left 성인
+          th 아동
+          th 유아
+      tbody
+        tr
+          td 비수기
+          td 120,000
+          td 100,000
+          td 120,000
+          td 140,000
+          td.border-left 10,000
+          td 5,000
+          td 0
+        tr
+          td 준성수기
+          td 120,000
+          td 100,000
+          td 120,000
+          td 140,000
+          td.border-left 10,000
+          td 5,000
+          td 0
+        tr
+          td 성수기
+          td 140,000
+          td 120,000
+          td 140,000
+          td 160,000
+          td.border-left 15,000
+          td 10,000
+          td 0
+
+
+
 
     h4 객실 내 시설
     p.pb-4 냉장고, 다리미, 드라이기, 쇼파, 스파/월풀, 에어컨, 욕실용품, 전기밥솥, 커피포트, TV
@@ -87,12 +108,6 @@ body(name='rooms')
       | 다른객실 보기
 
   .py-5
-
-
-
-
-
-
 
 
   //- Footer
