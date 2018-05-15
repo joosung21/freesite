@@ -1,4 +1,3 @@
-
 // Theme Colors
 $dark: #343a40
 $red: #E73E46
@@ -6,6 +5,7 @@ $orange: #f88938
 $pink: #f765a0
 $green: #60b911
 $blue: #4b95ff
+$onda: #4b95ff
 $navy: #334c75
 
 //--------------- Initiate ---------------//
@@ -23,6 +23,10 @@ a:focus, a:active, button:focus, button:active
 
 .nav-link
   transition: all .3s
+
+.nav-item
+  outline: none !important
+  box-shadow: none
 
 .margin-for-nav
   margin-top: 55px
@@ -69,6 +73,70 @@ a:focus, a:active, button:focus, button:active
   padding: 0 1.5rem
   opacity: 1
   margin: -.12rem 0
+
+// Swal Popup 스타일 수정
+.swal2-container
+  .swal2-popup
+    width: auto !important
+    padding: 4rem 5rem !important
+    -webkit-border-radius: 0
+    -moz-border-radius: 0
+    border-radius: 0
+
+    .swal2-progresssteps
+      margin-bottom: 1rem
+      .swal2-progressline
+        background-color: lighten($onda, 15%) !important
+      .swal2-progresscircle
+        background-color: lighten($onda, 15%) !important
+      .swal2-activeprogressstep
+        background-color: $onda !important
+
+    .swal2-icon
+      &.swal2-success
+        border-color: $onda
+        .swal2-success-ring
+          border-color: rgba($onda, .3)
+        [class^=swal2-success-line]
+          background-color: $onda
+
+    .swal2-title
+      margin: 0 0 .6em
+      padding: 0 5rem !important
+      font-size: 1.5rem
+      font-weight: 400
+
+    .swal2-content
+      padding: 0 0 2rem 0
+      white-space: pre
+
+    .swal2-input
+      -webkit-border-radius: 0
+      -moz-border-radius: 0
+      border-radius: 0
+      text-align: center
+      font-weight: 300
+
+    .swal2-buttonswrapper
+      margin-top: 1rem
+
+    .swal2-styled
+      margin: 0 2px 0 2px
+      padding: 8px 30px
+      -webkit-border-radius: 0
+      -moz-border-radius: 0
+      border-radius: 0
+      font-size: 15px
+      &:focus
+        box-shadow: none
+      &.swal2-cancel
+        background-color: #ccc !important
+      &.swal2-confirm
+        background-color: $onda !important
+
+    .swal2-actions
+      button
+        border-radius: 2px
 
 // Scroll Top Button
 #scrollTop
