@@ -90,15 +90,11 @@ $( document ).ready(function() {
       break;
   }
 
-  // Viewpage Top Image Slider
-  // $("#view-top-slider").lightSlider({
-  //   loop:true,
-  //   keyPress:true
-  // });
-
 });
 
 $(window).on('load', function(){
+    $('#img-loader').hide();
+    $('#view-top-slider').removeClass('loading');
     $("#view-top-slider").lightSlider({
       loop:true,
       keyPress:true

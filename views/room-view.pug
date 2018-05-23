@@ -6,7 +6,15 @@ body(name='rooms')
   include ./includes/topnav.pug
 
   .view-header.margin-for-nav
-    ul#view-top-slider.content-slider
+    #img-loader
+      .d-flex.justify-content-center.align-items-center(style='height: 480px')
+        .lds-ring.d-inline-block
+          div
+          div
+          div
+          div
+
+    ul#view-top-slider.content-slider.loading
       li
         img#test(src='/images/sample/2A-01.jpg')
       li
