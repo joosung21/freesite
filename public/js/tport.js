@@ -55,12 +55,6 @@ $( document ).ready(function() {
     }
   });
 
-  // Viewpage Top Image Slider
-  $("#view-top-slider").lightSlider({
-    loop:true,
-    keyPress:true
-  });
-
   $('#scrollTop').click(function () {
     $("html, body").animate({ scrollTop: 0 }, "normal");
     return false;
@@ -96,9 +90,20 @@ $( document ).ready(function() {
       break;
   }
 
+  // Viewpage Top Image Slider
+  // $("#view-top-slider").lightSlider({
+  //   loop:true,
+  //   keyPress:true
+  // });
+
 });
 
-
+$(window).on('load', function(){
+    $("#view-top-slider").lightSlider({
+      loop:true,
+      keyPress:true
+    });
+ });
 
 $(document).scroll(function () {
   ($(this).scrollTop() < 20) ? $('#scrollTop').hide() : $('#scrollTop').show();
