@@ -61,48 +61,49 @@ body(name='rooms')
       br
       | - 기준 인원 초과 시 추가요금이 발생합니다.
 
-    table.table.border.text-center.mb-5
-      thead.bg-light
-        tr
-          th(colspan='5') 객실 기본요금
-          th.border-left(colspan='3') 추가인원 요금
-        tr
-          th.border-right(style='width: 12%') 시즌
-          th(style='width: 12%') 일요일
-          th(style='width: 12%') 주중
-          th(style='width: 12%') 금요일
-          th(style='width: 12%') 토요일(공휴일전날)
-          th.border-left(style='width: 8%') 성인
-          th(style='width: 8%') 아동
-          th(style='width: 8%') 유아
-      tbody
-        tr
-          td.border-right 비수기
-          td 120,000
-          td 100,000
-          td 120,000
-          td 140,000
-          td.border-left 10,000
-          td 5,000
-          td 0
-        tr
-          td.border-right 준성수기
-          td 120,000
-          td 100,000
-          td 120,000
-          td 140,000
-          td.border-left 10,000
-          td 5,000
-          td 0
-        tr
-          td.border-right 성수기
-          td 140,000
-          td 120,000
-          td 140,000
-          td 160,000
-          td.border-left 15,000
-          td 10,000
-          td 0
+    .table-responsive
+      table#room-price-table.table.border.text-center.mb-5
+        thead.bg-light
+          tr
+            th(colspan='5') 객실 기본요금
+            th.border-left(colspan='3') 추가인원 요금
+          tr
+            th.border-right(style='width: 12%; min-width: 5rem') 시즌
+            th(style='width: 12%') 일요일
+            th(style='width: 12%') 주중
+            th(style='width: 12%') 금요일
+            th(style='width: 12%') 토요일(공휴일전날)
+            th.border-left(style='width: 8%') 성인
+            th(style='width: 8%') 아동
+            th(style='width: 8%') 유아
+        tbody
+          tr
+            td.border-right 비수기
+            td 120,000
+            td 100,000
+            td 120,000
+            td 140,000
+            td.border-left 10,000
+            td 5,000
+            td 0
+          tr
+            td.border-right 준성수기
+            td 120,000
+            td 100,000
+            td 120,000
+            td 140,000
+            td.border-left 10,000
+            td 5,000
+            td 0
+          tr
+            td.border-right 성수기
+            td 140,000
+            td 120,000
+            td 140,000
+            td 160,000
+            td.border-left 15,000
+            td 10,000
+            td 0
 
 
 
@@ -110,7 +111,7 @@ body(name='rooms')
     h4 객실 내 시설
     p.pb-4 냉장고, 다리미, 드라이기, 쇼파, 스파/월풀, 에어컨, 욕실용품, 전기밥솥, 커피포트, TV
 
-    iframe(src='https://app.onda.me/v2/booking/damon/week?roomtype_id=15204', frameborder='0', scrolling='no', width='100%', height='280px')
+    iframe(src='https://app.onda.me/v2/booking/damon/week?roomtype_id=15204', frameborder='0', scrolling='no', width='100%', height='300px')
 
     a.btn.btn-primary.px-4.mr-3(href='/reservation') 실시간 예약
     a.btn.btn-light.px-4(href='/rooms')
